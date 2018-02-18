@@ -7,17 +7,16 @@ set sw=4
 inoremap ( ()<ESC>i
 inoremap [ []<ESC>i
 inoremap { {}<ESC>i
-inoremap <CR> <CR><Space><BS>
-"inoremap < <><ESC>i
+inoremap < <><ESC>i
 map <C-s> :call Save()<CR>
 map <F11> :call CompileRunGcc()<CR>
 map <F10> :call RunExe()<CR>
 map <F9> :call CompileGcc()<CR>
 
-imap <C-s> <Esc>:call Save()<CR>a
-imap <F11> <Esc>:call CompileRunGcc()<CR>a
-imap <F10> <Esc>:call RunExe()<CR>a
-imap <F9> <Esc>:call CompileGcc()<CR>a
+imap <C-s> <Esc>:call Save()<CR>i
+imap <F11> <Esc>:call CompileRunGcc()<CR>i
+imap <F10> <Esc>:call RunExe()<CR>i
+imap <F9> <Esc>:call CompileGcc()<CR>i
 
 func! Save()
 	exec "w"
@@ -38,7 +37,6 @@ func! RunExe()
 endfunc
 
 func! CompileGcc()
-	exec "w"
     if &filetype == 'cpp'
 		exec '!g++ % -o %<.exe'
 	endif
