@@ -4,6 +4,8 @@ set tabstop=4
 set hls
 set softtabstop=4
 set sw=4
+set nocindent
+set autoindent
 inoremap ( ()<ESC>i
 inoremap [ []<ESC>i
 inoremap { {}<ESC>i
