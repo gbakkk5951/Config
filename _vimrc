@@ -4,12 +4,12 @@ set tabstop=4
 set hls
 set softtabstop=4
 set sw=4
-set nocindent
-set autoindent
 inoremap ( ()<ESC>i
 inoremap [ []<ESC>i
 inoremap { {}<ESC>i
 inoremap <CR> <CR><Space><BS>
+set nocindent
+set autoindent
 "inoremap < <><ESC>i
 map <C-s> :call Save()<CR>
 "map <F11> :call CompileRunGcc()<CR>
@@ -128,7 +128,7 @@ if has("autocmd")
   " Use the default filetype settings, so that mail gets 'tw' set to 72,
   " 'cindent' is on in C files, etc.
   " Also load indent files, to automatically do language-dependent indenting.
-  filetype plugin indent on
+  "filetype plugin indent on
 
   " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
