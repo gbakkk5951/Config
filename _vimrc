@@ -64,7 +64,7 @@ endfunc
 "Gvim
 colorscheme evening
 
-set guifont=Consolas:h15
+set guifont=Consolas:h17
 
 " An example for a vimrc file.
 "
