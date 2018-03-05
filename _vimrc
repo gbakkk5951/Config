@@ -24,6 +24,8 @@ vnoremap <tab> :><CR>
 vnoremap <S-tab> :<<CR>
 nnoremap <tab> :><CR> 
 nnoremap <S-tab> :<<CR>
+nnoremap o o<Space><BS>
+nnoremap O O<Space><BS>
 "vnoremap </>: call Ins_zhushi()<CR>
 "vnoremap <S-/>: call Del_zhushi()<CR>
 
