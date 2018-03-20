@@ -17,6 +17,7 @@ map <C-s> :call Save()<CR>
 "map <F9> :call CompileGcc()<CR>
 
 imap <C-s> <Esc>:call Save()<CR>a
+map <F11> call DevCpp()<CR>a
 "imap <F11> <Esc>:call CompileRunGcc()<CR>a
 "imap <F10> <Esc>:call RunExe()<CR>a
 "imap <F9> <Esc>:call CompileGcc()<CR>a
@@ -28,7 +29,10 @@ nnoremap o o<Space><BS>
 nnoremap O O<Space><BS>
 "vnoremap </>: call Ins_zhushi()<CR>
 "vnoremap <S-/>: call Del_zhushi()<CR>
-
+func! DevCpp()
+	exec "w"
+	exec '!%'
+endfunc
 func! Save()
 	exec "w"
 endfunc
